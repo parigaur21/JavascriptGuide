@@ -15,5 +15,5 @@ console.log(obj3);
 console.log(Object.keys(user));
 console.log(Object.values(user));
 console.log(Object.entries(user));
-console.log(user.hasOwnProperty('isLogged'));
+console.log(user.hasOwnProperty('isLogged')); //logged
 
