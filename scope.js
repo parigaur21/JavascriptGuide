@@ -17,4 +17,4 @@ console.log(a);
 console.log(b);
 console.log(c);
 
-//console ke andr scope alg h or code environmentme node ke through run krenge vo alg h!!! aise 
+//console ke andr scope alg h or code environmentme node ke through run krenge vo alg h!!! 
