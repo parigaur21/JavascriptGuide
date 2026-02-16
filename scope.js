@@ -1,20 +1,36 @@
-//let, var, const
-/* {} is called scope::
-with function or condition 
-*/
+// //let, var, const
+// /* {} is called scope::
+// with function or condition 
+// */
 
-let a = 100
-const b = 300
-var c = 200
+// //accessibility 
+// let a = 100
+// const b = 300
+// var c = 200
 
-if(true){   //block scope- var 
-    let a = 10
-    const b = 20
-    var c = 30
+// if(true){   //block scope- var 
+//     let a = 10
+//     const b = 20
+//     var c = 30
+// }
+// //examples
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// //console ke andr scope alg h or code environmentme node ke through run krenge vo alg h!!! 
+
+//child function can access the parent function
+function one(){
+    const userName = "Pari"
+
+    function two(){
+        const website = "yt"
+        console.log(userName);
+    }
+    // console.log(website);
+    // two()
 }
-//examples
-console.log(a);
-console.log(b);
-console.log(c);
+one()
 
-//console ke andr scope alg h or code environmentme node ke through run krenge vo alg h!!! 
+
