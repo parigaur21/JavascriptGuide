@@ -20,7 +20,7 @@
 
 // //console ke andr scope alg h or code environmentme node ke through run krenge vo alg h!!! 
 
-//child function can access the parent function
+//child function can access the parent function!!!
 function one(){
     const userName = "Pari"
 
