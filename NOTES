@@ -1,0 +1,65 @@
+Javacript Execution Context [JEC]:
+{} global-EC -this(window object)
+
+- Global EC
+- Function EC
+- Eval EC [property of global object]
+
+||js code executes in 2 phases||
+
+1. memory creation phase
+2. execution phase
+
+//understnading w code:
+
+<!-- let val1 : 10
+let val2 : 5
+function add(n, m){
+    let total = n+m
+    return total
+}
+let result1 = add(val1, val2)
+let result2 = add(10,2) -->
+
+firstly:
+----Memory phase----
+val1, val2 = undefined |
+add = function's definition
+result1, result2 = undefined
+
+----Execution phase----
+val1, val2 = 10, 5
+add [exection context i.e. new variable environment & execution thread]
+::
+-MP- [val1, val2, total] and -EP- [num1=10, num2=5, total=15] again
+total returned to |GLOBAL EXECUTION CONTEXT|
+
+then DELETE;
+
+Secondly:
+new variable environment+ thread
+result2::
+again repeat!!
+total returned to |GLOBAL EXECUTION CONTEXT|
+
+---
+
+            CALLSTACK:
+
+If in Global-EC we have many function and we call then one-after-another
+without returning it so it creates a stack! ---Follows LIFO---
+
+eg:
+function one(){
+console.log("one")
+}
+function two(){
+console.log("two")
+}
+function three(){
+console.log("three")
+}
+
+one()
+two()
+three()
