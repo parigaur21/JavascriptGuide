@@ -25,3 +25,7 @@ switch(month){
 //truthy values - true / {} / 1 / "0" / 'false' / " " / [] / function(){} / 
 
 //Nullish Coalescing Operator (??): null undefined
+ let val1;
+ val1 = 5 ?? 10
+ val2 = null ?? 10 //checks null safety
+ console.log(val1)
