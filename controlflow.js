@@ -27,5 +27,12 @@ switch(month){
 //Nullish Coalescing Operator (??): null undefined
  let val1;
  val1 = 5 ?? 10
- val2 = null ?? 10 //checks null safety
+ val2 = null ?? 10 ?? 20//checks null safety 
  console.log(val1)
+ console.log(val2)
+
+ //ternary operator
+
+ const price = 100
+ price <= 80 ? console.log("less than 80") : console.log("more than 80");
+
