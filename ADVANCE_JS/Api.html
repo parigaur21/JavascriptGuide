@@ -1,0 +1,36 @@
+<!-- //API(Application Programming interface) --
+//a set of rules and protocols that allows different software applications to communicate and exchange data. Acting as an intermediary, it enables developers to integrate functionality—such as payment processing or data retrieval—from other services without building them from scratch -->
+
+<!-- //xmlHttpRequest(XHR) is a built-in object in the browser that makes 
+ it possible to send and receive data from a server using the HTTP protocol. 
+ Foundation od AJAX(Asynchronous JavaScript and XML)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body style="background-color: black; color: white">
+    Value	State	 Description
+0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete.
+ </body>
+ <script>
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1');
+    xhr.send();
+    xhr.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data); //initially it is a string but now it is an object
+            console.log(this); //this- current context
+        }
+    }
+ </script>
+ </html>

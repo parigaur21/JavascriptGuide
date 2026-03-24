@@ -1,0 +1,12 @@
+<!-- v8 engine:  Google's open-source, high-performance JavaScript and WebAssembly engine,
+written in C++. It is the program that compiles and executes JavaScript code.
+
+Working:
+1. parsing - Abstract Syntax Tree(AST)
+2. interpreting - generates bytecode from AST
+3. optimizing - [TurboFan and Maglev] - v8 collects profiling data(type feedback)
+4. machine code generation - generate highly optimized machine code from bytecode
+5. deoptimization - If assumptions made during optimization are violated 
+                    at runtime (e.g., a variable type changes), V8 discards the 
+                    previously optimized code and falls back to the interpreter 
+                    to ensure correctness. -->
