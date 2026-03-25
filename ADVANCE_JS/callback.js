@@ -16,3 +16,7 @@ getData(function(data) {
 //  but lead to callback hell. Promises improve readability
 //  with chaining, and async/await is a cleaner syntax built
 //  on promises that makes asynchronous code look synchronous.”
+
+
+
+//Promises go to microtask queue( higher priority ).... while setTimeout goes to callback queue.
