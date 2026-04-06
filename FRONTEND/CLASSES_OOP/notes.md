@@ -1,7 +1,7 @@
 # javascript and classes
 
 
-//Javascript is prototype-based language and its classes are primarily syntactic sugar over existing prototype-based inheritance.
+//Javascript is prototype-based language and its classes are primarily syntactic sugar over existing prototype-based inheritance. //done
 
 
 ## OOP
@@ -59,4 +59,3 @@ js moves variables and function declaration to the top of their scope during exe
 var is function-scoped and hoisted.
 let and const are block-scoped.
 const cannot be reassigned.
-####
