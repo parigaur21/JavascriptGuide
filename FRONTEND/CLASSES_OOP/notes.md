@@ -1,7 +1,7 @@
 # javascript and classes
 
 
-//Javascript is prototype-based language and its classes are primarily syntactic sugar over existing prototype-based inheritance. 
+//Javascript is prototype-based language and its classes are primarily syntactic sugar over existing prototype-based inheritance. //done
 
 
 ## OOP
